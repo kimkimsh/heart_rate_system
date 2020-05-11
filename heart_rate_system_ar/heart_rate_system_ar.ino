@@ -23,7 +23,7 @@ void loop() {
   //read sensor value
   beat_pulse = analogRead(A0);
 
-  if ((digitalRead(10) == 1) || (digitalRead(11) == 1)) {
+  if ((digitalRead(lof_pin) == 1) || (digitalRead(rof_pin) == 1)) {
     Serial.println('!');
   }
   else {

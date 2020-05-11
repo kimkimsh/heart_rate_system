@@ -24,6 +24,7 @@ void setup () {
   myPort = new Serial(this, Serial.list()[0], 9600);
   // don't generate a serialEvent() unless you get a newline character:
   myPort.bufferUntil('\n');
+  //load image
   img = loadImage("heart.png");
   // set inital background:
   background(255);
